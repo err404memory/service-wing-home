@@ -1,0 +1,17 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+nav {
+  display: grid;
+  gap: 1rem;
+}
+
+a {
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 8px;
+}
