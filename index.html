@@ -4,19 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Service Wing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-text">
+      <p class="eyebrow">// personal infrastructure</p>
+      <h1>Service Wing</h1>
+      <p class="subtitle">Command deck for everything self-hosted.</p>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+      <span class="theme-icon">🌙</span>
+    </button>
+  </header>
+
   <main>
-    <h1>Service Wing</h1>
-    <nav>
-      <a href="https://affine.err404memory.com">AFFiNE</a>
-      <a href="https://git.err404memory.com">Forgejo</a>
-      <a href="#">Todozi</a>
-      <a href="#">Trilium</a>
-      <a href="#">Balance</a>
-      <a href="https://n8n.err404memory.com">n8n</a>
-    </nav>
+
+    <section class="wing" style="--wing-hue: 265;">
+      <h2 class="wing-title"><span class="wing-index">01</span> Dev &amp; Automation</h2>
+      <div class="card-grid">
+
+        <a class="card" href="https://git.err404memory.com">
+          <span class="card-icon">🐙</span>
+          <span class="card-body">
+            <span class="card-name">Forgejo</span>
+            <span class="card-desc">Git hosting, self-forged</span>
+          </span>
+          <span class="card-arrow">&rarr;</span>
+        </a>
+
+        <a class="card" href="https://n8n.err404memory.com">
+          <span class="card-icon">🔀</span>
+          <span class="card-body">
+            <span class="card-name">n8n</span>
+            <span class="card-desc">Workflow automation</span>
+          </span>
+          <span class="card-arrow">&rarr;</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="wing" style="--wing-hue: 190;">
+      <h2 class="wing-title"><span class="wing-index">02</span> Notes &amp; Knowledge</h2>
+      <div class="card-grid">
+
+        <a class="card" href="https://affine.err404memory.com">
+          <span class="card-icon">📓</span>
+          <span class="card-body">
+            <span class="card-name">AFFiNE</span>
+            <span class="card-desc">Docs, whiteboards, blocks</span>
+          </span>
+          <span class="card-arrow">&rarr;</span>
+        </a>
+
+        <a class="card is-stub" href="#" aria-disabled="true">
+          <span class="card-icon">🌲</span>
+          <span class="card-body">
+            <span class="card-name">Trilium</span>
+            <span class="card-desc">Notes, not wired up yet</span>
+          </span>
+          <span class="card-status">soon</span>
+        </a>
+
+        <a class="card is-stub" href="#" aria-disabled="true">
+          <span class="card-icon">✅</span>
+          <span class="card-body">
+            <span class="card-name">Todozi</span>
+            <span class="card-desc">Tasks, not wired up yet</span>
+          </span>
+          <span class="card-status">soon</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="wing" style="--wing-hue: 20;">
+      <h2 class="wing-title"><span class="wing-index">03</span> Finance</h2>
+      <div class="card-grid">
+
+        <a class="card is-stub" href="#" aria-disabled="true">
+          <span class="card-icon">💰</span>
+          <span class="card-body">
+            <span class="card-name">Balance</span>
+            <span class="card-desc">Not wired up yet</span>
+          </span>
+          <span class="card-status">soon</span>
+        </a>
+
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <p>err404memory &middot; deployed from <code>main</code></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
